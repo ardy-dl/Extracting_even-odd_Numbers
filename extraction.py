@@ -7,12 +7,16 @@
 def extract():
     # open numbers.txt(read), even.txt(append), odd.txt(append)
     with open("numbers.txt") as ref_file, open("even.txt", "a") as even_file, open("odd.txt", "a") as odd_file:
-# read the numbers per line
+        # read the numbers per line
         for line in ref_file:
-            print(line.strip())
-# if even,
-# append in even.txt
-# else, append in odd.txt
+            # convert to integer
+            input_num = int(line)
+            # if even,
+            if input_num % 2 == 0:
+            # append in even.txt
+                even_file.write(str(input_num) + "\n") 
+            # else, append in odd.txt
+
 # Designing the file
 
 # start
