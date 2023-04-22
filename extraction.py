@@ -17,7 +17,7 @@ def extract():
                 even_file.write(str(input_num) + "\n") 
             # else, append in odd.txt
             else:
-                print()
+                odd_file.write(str(input_num) + "\n")
 
 # Designing the file
 
